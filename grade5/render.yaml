@@ -2,6 +2,7 @@ services:
   - type: web
     name: nail-salon-api
     runtime: docker
+    rootDir: grade5
     plan: free
     healthCheckPath: /swagger-ui.html
     envVars:
