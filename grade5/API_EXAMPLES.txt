@@ -1,0 +1,23 @@
+SWAGGER: http://localhost:8080/swagger-ui.html
+LOGIN: POST /api/auth/login
+ADMIN: admin / admin123
+USER: user / user123
+
+8 TABLES:
+users
+clients
+masters
+nail_services
+appointments
+materials
+payments
+reviews
+
+CRUD ENDPOINTS:
+/api/clients
+/api/masters
+/api/services
+/api/appointments
+/api/materials
+/api/payments
+/api/reviews

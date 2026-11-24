@@ -1,0 +1,1 @@
+package com.example.nailsalon.dto; public record AuthResponse(String token,String login,String role) {}

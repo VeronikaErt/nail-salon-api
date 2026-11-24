@@ -1,0 +1,3 @@
+package com.example.nailsalon.entity;
+import jakarta.persistence.*; import jakarta.validation.constraints.*;
+@Entity @Table(name="users") public class User { @Id @GeneratedValue(strategy=GenerationType.IDENTITY) private Long id; @NotBlank @Size(min=3,max=50) @Column(unique=true,nullable=false) private String login; @NotBlank @Size(min=6,max=100) private String password; @NotBlank private String role="USER"; public User(){} public User(String l,String p,String r){login=l;password=p;role=r;} public Long getId(){return id;} public String getLogin(){return login;} public void setLogin(String v){login=v;} public String getPassword(){return password;} public void setPassword(String v){password=v;} public String getRole(){return role;} public void setRole(String v){role=v;} }
