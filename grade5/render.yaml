@@ -5,9 +5,7 @@ services:
     rootDir: grade5
     plan: free
     healthCheckPath: /swagger-ui.html
-    envVars:
-      - key: SPRING_PROFILES_ACTIVE
-        value: prod
+        envVars:
       - key: DB_URL
         sync: false
       - key: DB_USERNAME
@@ -15,4 +13,6 @@ services:
       - key: DB_PASSWORD
         sync: false
       - key: JWT_SECRET
-        generateValue: true
+        sync: false
+      - key: SPRING_PROFILES_ACTIVE
+        value: prod
